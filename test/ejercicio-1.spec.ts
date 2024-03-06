@@ -56,6 +56,7 @@ describe('Adapter entre Rational y Complex tests', () => {
       expect(complex1.sub(adapter1)).to.deep.eq(new Complex(3/2, 1));
       expect(complex1.mult(adapter2)).to.deep.equal(new Complex(2, 0));
       expect(() => complex2.div(adapter1)).to.throw('No se puede dividir entre 0');
+
     });
   });
 
